@@ -4,7 +4,7 @@
 
 ### Limitation: Death isnt the end
 
-### Name: The World's Best Kaiju
+# Name: The World's Best Kaiju
 
 ## Idea:
 
