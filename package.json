@@ -1,0 +1,25 @@
+{
+    "name": "mini-jam-81-kaiju",
+    "version": "1.0.0",
+    "description": "-   Create your own Kaiju\r -   Level it up in idle, by destroying cities\r -   fight against other Kaiju\r -   if your Kaiju dies in a Battle it needs 5 hours to heal itself",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DropMania/Mini-Jam-81-Kaiju.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/DropMania/Mini-Jam-81-Kaiju/issues"
+    },
+    "homepage": "https://github.com/DropMania/Mini-Jam-81-Kaiju#readme",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.1"
+    }
+}

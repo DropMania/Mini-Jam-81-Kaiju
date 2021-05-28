@@ -1,0 +1,16 @@
+//https://www.dafont.com/de/kaiju-monster-g.font
+@font-face {
+    font-family: KaijuText;
+    src: url(./assets/font/gomarice_kaiju_monster.ttf);
+}
+
+//https://www.cufonfonts.com/font/kaiju
+@font-face {
+    font-family: KaijuTitle;
+    src: url(./assets/font/KaijuBold.woff);
+}
+
+$bg-primary: #111;
+
+$font-primary: KaijuText;
+$font-title: KaijuTitle;
