@@ -1,5 +1,5 @@
 export default async (endpoint, data = {}) => {
-    let API_URL = 'http://localhost:5000'
+    let API_URL = 'https://worldsbestkaiju.herokuapp.com'
     let response = await fetch(`${API_URL}/${endpoint}`, {
         method: 'POST',
         headers: {

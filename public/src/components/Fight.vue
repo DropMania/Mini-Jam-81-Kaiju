@@ -46,7 +46,7 @@
                     :src="winText == 'won' ? against.img : store.kaiju.img"
                 />
                 <!-- https://gifimage.net/pixel-explosion-gif-8/ -->
-                <img src="src/assets/img/burn.gif" class="burn" />
+                <img src="/src/assets/img/burn.gif" class="burn" />
             </div>
         </div>
     </div>

@@ -8,7 +8,7 @@
                 <img :src="store.kaiju.img" />
             </div>
             <div class="cityimg">
-                <img src="src/assets/img/city.png" />
+                <img src="/src/assets/img/city.png" />
             </div>
         </div>
     </div>
