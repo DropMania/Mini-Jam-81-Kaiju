@@ -9,13 +9,13 @@ const history = require('connect-history-api-fallback')
 app.use(cors())
 app.use(bodyParser.json())
 app.use(express.static(__dirname+'/public/dist'))
-
 app.use(
     history({
         disableDotRule: true,
         verbose: true
     })
 )
+app.use(express.static(__dirname+'/public/dist'))
 let levelUpTime = 3600000
 let healTime = 18000000
 
