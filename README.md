@@ -18,6 +18,6 @@
 -   [x] Create a Vue app
 -   [x] Create a Kaiju Creator
 -   [x] Store all Kaiju on a Server
--   [ ] Implement Idle City destroyer
--   [ ] Implement fight against other Kaiju
--   [ ] Kaiju Leaderboard
+-   [x] Implement Idle City destroyer
+-   [x] Implement fight against other Kaiju
+-   [x] Kaiju Leaderboard
