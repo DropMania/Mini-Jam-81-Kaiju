@@ -8,8 +8,8 @@ const fs = require('fs')
 app.use(cors())
 app.use(bodyParser.json())
 
-let levelUpTime = 10000
-let healTime = 30000
+let levelUpTime = 3600000
+let healTime = 18000000
 
 setInterval(() => {
     let allKaijuData = JSON.parse(fs.readFileSync(__dirname + '/kaijus.json'))
