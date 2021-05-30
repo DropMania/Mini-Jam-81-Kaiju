@@ -31,7 +31,8 @@ export default {
         let setColor = (rgbS) => (rgb = rgbS.split(','))
         let history = []
         let data = {}
-
+        let eraserMode = false
+        let toggleEraser = () => (eraserMode = !eraserMode)
         onMounted(() => {
             ctx = cnvs.value.getContext('2d')
             data = ctx.getImageData(0, 0, canvasWidth, canvasHeight)
@@ -39,7 +40,7 @@ export default {
                 data.data[i] = 0
                 data.data[i + 1] = 0
                 data.data[i + 2] = 0
-                data.data[i + 3] = 20
+                data.data[i + 3] = 0
             }
             ctx.putImageData(data, 0, 0)
             history.push(data)
@@ -102,10 +103,10 @@ export default {
             let transY = y * 32 * 4
             let pos = transX + transY
 
-            data[pos] = rgb[0]
-            data[pos + 1] = rgb[1]
-            data[pos + 2] = rgb[2]
-            data[pos + 3] = 255
+            data[pos] = eraserMode ? 0 : rgb[0]
+            data[pos + 1] = eraserMode ? 0 : rgb[1]
+            data[pos + 2] = eraserMode ? 0 : rgb[2]
+            data[pos + 3] = eraserMode ? 0 : 255
         }
         function getPixel(x, y, data) {
             let transX = x * 4
@@ -120,7 +121,9 @@ export default {
             getBase64,
             setColor,
             colors,
-            props
+            props,
+            toggleEraser,
+            eraserMode
         }
     }
 }

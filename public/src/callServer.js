@@ -1,4 +1,4 @@
-export default async (endpoint, data) => {
+export default async (endpoint, data = {}) => {
     let API_URL = 'http://localhost:5000'
     let response = await fetch(`${API_URL}/${endpoint}`, {
         method: 'POST',

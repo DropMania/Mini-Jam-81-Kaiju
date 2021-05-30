@@ -15,9 +15,9 @@
 
 ## Todo:
 
--   [ ] Create a Vue app
--   [ ] Create a Kaiju Creator
--   [ ] Store all Kaiju on a Server
+-   [x] Create a Vue app
+-   [x] Create a Kaiju Creator
+-   [x] Store all Kaiju on a Server
 -   [ ] Implement Idle City destroyer
 -   [ ] Implement fight against other Kaiju
 -   [ ] Kaiju Leaderboard
